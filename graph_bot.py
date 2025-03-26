@@ -12,8 +12,8 @@ import os
 rcts = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 
 # API KEYS
-os.environ['GROQ_API_KEY'] = GROQ_API_KEY
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+os.environ['GROQ_API_KEY'] 
+os.environ['OPENAI_API_KEY'] 
 os.environ['NEO4J_URI'] = "neo4j+s://15a09af2.databases.neo4j.io"
 os.environ['NEO4J_USERNAME'] = "neo4j"
 os.environ['NEO4J_PASSWORD'] = "7bfyGxtvdWQdLr8D9siRrP2Y0xVb0DxtFXHAL63kLR4"
