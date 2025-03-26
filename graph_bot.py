@@ -12,9 +12,6 @@ import os
 rcts = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 
 # API KEYS
-from google.colab import userdata
-OPENAI_API_KEY = userdata.get('OPEN_AI_KEY')
-GROQ_API_KEY = userdata.get("GROQ_API_KEY")
 os.environ['GROQ_API_KEY'] = GROQ_API_KEY
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 os.environ['NEO4J_URI'] = "neo4j+s://15a09af2.databases.neo4j.io"
