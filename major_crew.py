@@ -1,5 +1,5 @@
 from crewai import Agent, Task, Crew
-from crewai import agent, task, crew, CrewBase
+from crewai.project import agent, task, crew, CrewBase
 
 @CrewBase
 class Medic_Bot():
