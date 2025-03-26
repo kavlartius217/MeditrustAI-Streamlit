@@ -1,3 +1,7 @@
+
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from crewai.flow import Flow, start, listen, and_, or_, router
 from langchain_community.document_loaders import PyPDFLoader
 from pydantic import BaseModel
