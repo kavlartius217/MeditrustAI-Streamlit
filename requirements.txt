@@ -6,3 +6,4 @@ langchain_neo4j
 neo4j
 langchain_experimental
 pypdf
+pysqlite3-binary
