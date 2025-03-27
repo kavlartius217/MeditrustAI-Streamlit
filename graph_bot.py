@@ -6,14 +6,15 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.agents import create_openai_tools_agent, AgentExecutor
 from langchain_openai import OpenAIEmbeddings
 from langchain.tools.retriever import create_retriever_tool
+import streamlit as st
 from langchain_groq import ChatGroq
 import os
 
 rcts = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 
 # API KEYS
-os.environ['GROQ_API_KEY'] 
-os.environ['OPENAI_API_KEY'] 
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+OPENAI_API_KEY=st.secrets['OPENAI_API_KEY']
 os.environ['NEO4J_URI'] = "neo4j+s://15a09af2.databases.neo4j.io"
 os.environ['NEO4J_USERNAME'] = "neo4j"
 os.environ['NEO4J_PASSWORD'] = "7bfyGxtvdWQdLr8D9siRrP2Y0xVb0DxtFXHAL63kLR4"
