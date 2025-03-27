@@ -20,7 +20,7 @@ os.environ['NEO4J_USERNAME'] = "neo4j"
 os.environ['NEO4J_PASSWORD'] = "7bfyGxtvdWQdLr8D9siRrP2Y0xVb0DxtFXHAL63kLR4"
 
 # Loading the documents
-doc_1 = TextLoader("/content/abnormalities (1).md")
+doc_1 = TextLoader("/content/abnormalities.md")
 doc_1 = doc_1.load()
 doc_1 = rcts.split_documents(doc_1)
 
