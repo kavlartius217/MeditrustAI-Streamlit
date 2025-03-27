@@ -1,5 +1,6 @@
 from crewai import Agent, Task, Crew
 from crewai.project import agent, task, crew, CrewBase
+import streamlit as st
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 OPENAI_API_KEY=st.secrets['OPENAI_API_KEY']
 
