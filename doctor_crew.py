@@ -3,7 +3,6 @@ from crewai.project import agent, task, crew, CrewBase
 from crewai_tools import SerperDevTool
 import os
 
-from google.colab import userdata
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 OPENAI_API_KEY=st.secrets['OPENAI_API_KEY']
 SERP_API_KEY=st.secrets['SERP_API_KEY']
