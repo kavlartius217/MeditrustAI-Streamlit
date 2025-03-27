@@ -7,3 +7,4 @@ neo4j
 langchain_experimental
 pypdf
 pysqlite3-binary
+streamlit
