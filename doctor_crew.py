@@ -4,8 +4,9 @@ from crewai_tools import SerperDevTool
 import os
 
 from google.colab import userdata
-SERP_API_KEY=userdata.get('SERP_API_KEY')
-os.environ['SERP_API_KEY']=SERP_API_KEY
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+OPENAI_API_KEY=st.secrets['OPENAI_API_KEY']
+SERP_API_KEY=st.secrets['SERP_API_KEY']
 
 @CrewBase
 class Doctor_Bot():
