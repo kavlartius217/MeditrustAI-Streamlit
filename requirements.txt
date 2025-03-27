@@ -8,3 +8,4 @@ langchain_experimental
 pypdf
 pysqlite3-binary
 streamlit
+nest_asyncio 
